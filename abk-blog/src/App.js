@@ -1,22 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './Navbar';
+import Home from './Home'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
+  const title = 'Welcome to the new blog'; 
+  const likes = 50;
 
-    <div classnName="ThisIsGoat">
-      <p>
-        How is this possible
-      </p>
-      
-
-    </div> 
-
+  return(
+   <div className="App">
+    <Navbar/>
+    <div className="content">
+      <Home/>
     </div>
+   </div> 
   );
 }
 
